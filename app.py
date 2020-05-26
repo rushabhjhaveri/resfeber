@@ -16,5 +16,5 @@ Check if executed file is the main program.
 If it is, run the app. 
 '''
 if __name__ == "__main__": 
-	app.run()
+	app.run(debug=True)
 

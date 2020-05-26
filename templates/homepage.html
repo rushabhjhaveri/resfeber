@@ -8,167 +8,20 @@
 		<title> Dream It, Achieve It, Live It </title> 
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="../static/css/homepage.css" />
+		<link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='css/homepage.css') }}" />
 	</head>
 
 	<body>
 		<!-- Header -->
-		<header id="header">
-			<!-- Need to finalize app name. -->
-			<div class="logo"><a href="homepage.html">resfeber</a></div>
-			<a href="#menu"><span>Menu</span></a>
-		</header>
 
-		<!-- Nav Side Bar -->
-		<nav id="menu">
-			<ul class="links">
-				<!-- <li><a href="homepage.html">Home</a></li> -->
-				<li><a href="#" name="top">Home</a></li>
-				<li><a href="signin.html">Sign In</a></li>
-				<li><a href="signup.html">Sign Up</a></li>
-			</ul>
-		</nav>
-
-		<!-- Banner -->
-		<section id="banner" class="bg-img" data-bg="banner.jpg">
-			<div class="inner">
-				<header>
-					<h1> This Could Be You </h1>
-				</header>
+		<div class="header">
+			<a href="#default" class="logo">resfeber</a>
+			<div class="header-right">
+			  <a class="active" href="#home">Home</a>
+			  <a href="#contact">Contact</a>
+			  <a href="#about">About</a>
 			</div>
-			<a href="#one" class="more">Learn More</a>
-		</section>
-
-		<!-- One -->
-		<section id="one" class="wrapper post bg-img" data-bg="banner2.jpg">
-			<div class="inner">
-				<article class="box">
-					<header>
-						<h2> Make Your Life Worth Watching </h2> 
-						<p> Get started on your bucket list today! </p> 
-					</header>
-
-					<div class="content">
-						<p> We may not be here for a long time, so let's make it a good time! We all have those things we "definitely want to do once in this lifetime". Create your own personalized bucket list today, and start living your life to the fullest! </p>
-					</div>
-
-					<footer>
-						<a href="generic.html" class="button-alt">Learn More</a>
-					</footer>
-				</article>
-			</div>
-			<a href="#two" class="more">Learn More </a>
-		</section>
-
-		<!-- Two -->
-		<section id="two" class="wrapper post bg-img" data-bg="banner5.jpg">
-			<div class="inner">
-				<article class="box">
-					<header>
-						<h2> Stop Dreaming, Start Living </h2> 
-						<p> Sign up today and discover your wild side! </p>
-					</header>
-
-					<div class="content">
-						<p> All work and no play makes everyone a dull person. Discover your inner adventurous self and start expressing it today! </p>
-					</div>
-
-					<footer>
-						<a href="generic.html" class="button-alt">Learn More</a>
-					</footer>
-				</article>
-			</div>
-			<a href="#three" class="more">Learn More</a>
-		</section>
-
-
-		<!-- Three -->
-		<section id="three" class="wrapper post bg-img" data-bg="banner4.jpg">
-			<div class="inner">
-				<article class="box">
-					<header>
-						<h2> Smooth, Enhanced, Fluid </h2> 
-						<p> Immerse yourself in a visually appealing, enhanced planning experience.  </p>
-					</header>
-
-					<div class="content">
-						<p> Resfeber provides a smooth, impressive, enhanced experience that lets you create and manage your own specialized bucket list. </p>
-					</div>
-
-					<footer>
-						<a href="generic.html" class="button-alt">Learn More</a>
-					</footer>
-				</article>
-			</div>
-			<a href="#four" class="more">Learn More</a>
-		</section>
-
-
-		<!-- Four -->
-		<section id="four" class="wrapper post bg-img" data-bg="banner3.jpg">
-			<div class="inner">
-				<article class="box">
-					<header>
-						<h2> You Are The Master Of Your Own Destiny </h2> 
-						<p> Take control of an easy to use interface and a visually appealing application. </p>
-					</header>
-
-					<div class="content">
-						<p> Resfeber is easy to use, and has a beautifully smooth interface that lets you hit the ground running and planning your bucket list, and checking items off as well! </p>
-					</div>
-
-					<footer>
-						<a href="generic.html" class="button-alt">Learn More</a>
-					</footer>
-				</article>
-			</div>
-		</section>
-
-		<!-- Footer -->
-		<footer id="footer">
-			<div class="inner">
-				<h2> Contact Me </h2>
-				
-				<form action="#" method="post">
-					<div class="field half first">
-						<label for="name">Name</label>
-						<input name="name" id="name" type="text" placeholder="Name">
-					</div>
-					
-					<div class="field half">
-						<label for="email">Email</label>
-						<input name="email" id="email" type="email" placeholder="Email">
-					</div>
-					
-					<div class="field">
-						<label for="message">Message</label>
-						<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
-					</div>
-					
-					<ul class="actions">
-						<li><input value="Send Message" class="button alt" type="submit"></li>
-					</ul>
-				</form>
-				
-				<ul class="icons">
-					<li><a href="#" class="icon round fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon round fa-facebook"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon round fa-instagram"><span class="label">Instagram</span></a></li>
-				</ul>
-		
-				<div class="copyright">
-					&copy; resfeber. Design: <a href="https://rushabhjhaveri.github.io/">Rushabh Jhaveri</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
-				</div>
-			</div>
-		</footer>
-		
-		<!-- Scripts -->
-		<script src="../static/js/jquery.min.js"></script>
-		<script src="../static/js/jquery.scrolly.min.js"></script>
-		<script src="../static/js/jquery.scrollex.min.js"></script>
-		<script src="../static/js/skel.min.js"></script>
-		<script src="../static/js/util.js"></script>
-		<script src="../static/js/main.js"></script>
+		  </div>
 
 	</body>
 </html>
