@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;1,400;1,700&display=swap');
+
 .header {
     overflow: hidden;
-    background-color: #f1f1f1;
     padding: 20px 10px;
   }
   
@@ -14,6 +15,7 @@
     font-size: 18px;
     line-height: 25px;
     border-radius: 4px;
+    font-family: 'Caladea', serif;
   }
   
   /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
@@ -30,8 +32,9 @@
   
   /* Style the active/current link*/
   .header a.active {
-    background-color: dodgerblue;
-    color: white;
+    /* background-color: dodgerblue; */
+    color: black;
+    font-family: 'Caladea', serif;
   }
   
   /* Float the link section to the right */
